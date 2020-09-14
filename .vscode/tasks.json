@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-std=c++11",
+                "'${file}'",
+                "-O2",
+                "-o",
+                "'${fileBasenameNoExtension}'",
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+        }
+    ]
+}
