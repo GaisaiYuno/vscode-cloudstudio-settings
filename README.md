@@ -8,6 +8,4 @@
 
    若失败请 `apt-get update` 再执行上述操作。
 
-2. 安装 VSCode 插件 Settings Sync。
-
-   重新加载 Cloud Studio。
+2. 安装必要的 VSCode 插件

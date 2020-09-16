@@ -6,10 +6,10 @@
             "preLaunchTask": "Build",
             "type": "cppdbg",
             "request": "launch",
-            "program": "time ${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "MIMode": "gdb",
             "miDebuggerPath": "gdb",
@@ -19,11 +19,18 @@
             "preLaunchTask": "Build",
             "type": "cppdbg",
             "request": "launch",
-            "program": "time ${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "stopAtEntry": true,
-            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
             "environment": [],
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }
