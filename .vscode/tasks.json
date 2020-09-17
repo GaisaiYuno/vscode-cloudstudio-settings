@@ -11,7 +11,7 @@
                 "'${file}'",
                 "-O2",
                 "-o",
-                "'${fileDirname}/${fileBasenameNoExtension}'",
+                "'${fileBasenameNoExtension}'",
             ],
             "problemMatcher": [
                 "$gcc"
